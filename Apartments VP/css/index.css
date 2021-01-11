@@ -1,0 +1,115 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+@font-face {
+    font-family: "Code Demo Light";
+    src: url("../fonts/CodeDemo-Light.otf") format("opentype");
+}
+
+html {
+    font-family: Lato, Helvetica;
+    background-color:white;
+    font-size: 22px;
+    color: #F9F5F4;
+    text-align: left;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4em;
+    text-transform: uppercase;
+}
+
+.pseudo-header {
+    height: 148px;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -148px;
+}
+
+nav {
+    margin-right: 12.5%;
+}
+
+
+nav div {
+    list-style-type: none;
+    
+    display: flex;
+    align-items: center;
+}
+
+nav div p, nav div img{
+    margin-left: 30px;
+    display: inline;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin-left: 12.5%;
+}
+
+.mainback {
+    
+    height: 1000px;
+    width: auto;
+    margin: auto;
+    background-image: url("../images/main.png");
+    background-size: cover;
+    background-color: rgba(27, 26, 30, 0.7);
+    background-blend-mode: multiply;
+}
+
+.mainflex {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    left: 50%;
+}
+
+.mainflex h1, .mainflex h4, main h5 {
+    text-align: center;
+}
+
+main div h5 {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 18px 78px;
+    border: 1px solid rgb(249, 245, 244);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+
+main h1 {
+    margin-bottom: 40px;
+    font-family: "Code Demo Light";
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 103px;
+    letter-spacing: .2em;
+}
+
+@media only screen and (max-height: 600px) {
+    .mainflex {
+        display: none;
+    }
+}
